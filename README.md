@@ -163,4 +163,48 @@ Preservative Salt: 9. N=9 for salt, L=0 (wand).
 
 Sailcloth Thread: 11. N=11 for salt, L=0 (wand).
 
+Spyglass Crystal: 39. N=39 for salt, L=0 (lead wand).
+
+Buoyant Cable: 30. N=30, L=0.
+
+Ravari's Wheel: 30. N=48 for quicksilver, D=18 (projection+projection), L=0 (lead wand).
+
+Lubricating Filament: 30. N=30, L=0.
+
+Resonant Crystal: 39. N=38, L=1 for drop.
+
 Refined Bronze: 13. N=12 for tinstone, L=1 for movement.
+
+Ablative Crystal: 15. N=12, L=3 for movement, purification, and drop.
+
+Proof of Completeness: 12. N=12, L=0. No dispersal latency because quintessence is never grabbed. No drop latency because the outputs are never grabbed.
+
+Wheel Representation: 12. N=11, L=1 for dispersal (salt wand).
+
+Synthesis via Alcohol: 8. N=6, L=2 for movement and unification.
+
+Universal Compound: 96. N=96 for salt, L=0 (lead wand).
+
+General Anaesthetic: 19. N=18 for salt, L=1 for drop.
+
+Wakefulness Potion: 16. N=16, L=0 (wand).
+
+Suture Thread: 24. N=24 for salt, L=0.
+
+Blood-Stanching Powder: 37. N=36, L=1 for drop.
+
+Tonic of Hydration: 28. N=27, L=1 for drop.
+
+Van Berlo’s Pivots: 9?. N=11, D=2? (partially output+output, partially disposal+output), L=0
+
+Reactive Gold: N=24, L=2 for two purification steps. Non-overlap optimization uses N=26 to avoid purification latency, but this isn't required here.
+
+Assassin’s Filament: 30. N=30 for iron, L=0.
+
+Vaporous Solvent: 36. N=36 for stabilized air, L=0 (lead wand).
+
+Alchemical Slag: 14. N=12, L=2 for two purification steps. Using extra inputs to avoid purification latency isn't useful.
+
+Visillary Anaesthetic: ?. N=12, D=? (output+output and/or animismus+output), L=1 for drop.
+
+Electrum Separation: ?. Output-limited level.
