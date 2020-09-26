@@ -2,11 +2,11 @@
 
 This guide assumes you're already familiar with [regular cycles theory](https://www.reddit.com/r/opus_magnum/comments/7qmkv6/list_of_current_cycle_optimal_scores/).
 
-Overlap makes it possible to use inputs every cycle, and sometimes even twice per cycle, so instead of the usual `2N+1+L`, minimum cycles for a puzzle is given by `N-D+L`, where:
+Overlap makes it possible to use inputs every cycle, and sometimes even twice per cycle, so instead of the usual `2N+1+L`, minimum cycles for a level is given by `N-D+L`, where:
 
 * N is the number of sets of inputs needed to make all required outputs
 * D is the number of times you can double-consume limiting inputs
-* L is the minimum number of cycles from spawning the Nth set of inputs to completing the puzzle
+* L is the minimum number of cycles from spawning the Nth set of inputs to completing the level
 
 N has the same value as in regular cycle optimization. L becomes much lower thanks to overlap, and D is entirely new. Before detailing how to compute them, we need to talk about...
 
