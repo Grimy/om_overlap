@@ -77,141 +77,80 @@ As seen above, inputs can spawn twice per cycle. However, this requires the inpu
 
 Unless otherwise specified, D=0. Infinites never have drop latency.
 
+### Main campaign
+
 | Level  | Theoretical Minimum | Notes |
 | --- | --- | --- |
 | Stabilized Water | 3 | N=6, D=3 (trivial), L=0 (output is never grabbed) |
 | Refined Gold | 15 | N=30 for quicksilver, D=15 (projection+projection), L=0 (output is never grabbed) |
-
-Face Powder: 13. N=12, L=1 for drop.
-
-Waterproof Sealant: 12. N=12, L=0 (water wand).
-
-Hangover Cure: 19. N=18, L=1 for drop.
-
-Airship Fuel: 9. N=8, L=1 for drop.
-
-Precision Machine Oil: 12. N=12 for lead, L=0 (water wand). Quicksilver has N=12, L=1, but it can be double-consumed, making it non-limiting.
-
-Health Tonic: 8. N=12 for vitae, D=5 (output+same output), L=1 for movement (required to set up the double-consume).
-
-Stamina Potion: 12. N=12 for bistabilized water, L=0 (wand).
-
-Hair Product: 25. N=24, L=1 for drop.
-
-Rocket Propellant: 16. N=15, L=1 for drop.
-
-Mist of Incapacitation: 8. N=12 for air and quicksilver, D=5 (output+output for air, projection+output for quicksilver), L=1 for movement.
-
-Explosive Phial: 10. N=9, L=1 for drop.
-
-Armor Filament: 13. N=24 for quicksilver, D=11 (projection+projection), L=0. D=12 is not possible, since that would inevitably make a copper on cycle 2.
-
-Courage Potion: 13. N=12, L=1 for drop.
-
-Surrender Flare: 3. N=6, D=3 (trivial), L=0.
-
-Alcohol Separation: 3. N=6, D=3 (trivial), L=0.
-
-Water Purifier: 22. N=21, L=1 for drop.
-
-Seal Solvent: 24. N=24 for air, L=0 (lead wand).
-
-Climbing Rope Fiber: 36. N=36, L=0.
-
-Warming Tonic: 13. N=12, L=1.
-
-Life Sensing Potion: 12. N=12, D=1 (animismus+output), L=1.
-
-Very Dark Thread: 13. N=24 for quicksilver, D=11, L=0.
-
-Litharge Separation: 11. This is an output-limited level, so it doesn't follow the `N-D+L` formula. You can output at most twice on cycle 1 and 2, 3x on cycle 3, and 4x on later cycles, giving a minimum of 11 cycles for the 36 required outputs.
-
-Stain Remover: 24. N=24 for air and water, L=0 (lead wand).
-
-Sword Alloy: 49. N=48, L=1 for purification.
-
-Invisible Ink: 23. N=24, D=2 (animismus+output), L=1 for drop.
-
-Purified Gold: 52. N=48, L=4 for 5 purification steps, -1 because input is never grabbed. No drop latency because output is never grabbed.
-
-Alchemical Jewel: 36. N=36 for earth, L=0 (gold wand).
-
-Golden Thread: 24. N=24 for salt, L=0.
-
-Mist of Hallucination: 24. N=24 for air, L=0 (lead wand).
-
-Timing Crystal: 108. N=108 for salt, L=0 (gold wand).
-
-Voltaic Coil: 24. N=24 for lead, L=0.
-
-Unstable Compound: 31. N=30, L=1 for drop.
-
-Curious Lipstick: 49. N=54, D=5 (animismus+output), L=0 (vitae wand).
-
-Universal Solvent: 17. N=18, D=1 (animismus+output), L=0 (lead wand).
-
-Van Berlo's Wheel: 22. N=21, L=1 for drop.
-
-Van Berlo's Chain: 24. N=24, L=0.
-
-Reactive Cinnabar: 24. N=24 for salt, L=0 (quicksilver wand).
-
-Silver Caustic: 24. N=36 for quicksilver, D=12 (projection+projection), L=0 (wand).
-
-Lambent II/IX: 45. N=48 for fire, D=3 (output+output), L=0 (gold wand).
-
-Explorer's Salve: 14. N=18 for vitae, D=5 (output+same output), L=1 for movement (required to setup the double-consume).
-
-Preservative Salt: 9. N=9 for salt, L=0 (wand).
-
-Sailcloth Thread: 11. N=11 for salt, L=0 (wand).
-
-Spyglass Crystal: 39. N=39 for salt, L=0 (lead wand).
-
-Buoyant Cable: 30. N=30, L=0.
-
-Ravari's Wheel: 30. N=48 for quicksilver, D=18 (projection+projection), L=0 (lead wand).
-
-Lubricating Filament: 30. N=30, L=0.
-
-Resonant Crystal: 39. N=38, L=1 for drop.
-
-Refined Bronze: 13. N=12 for tinstone, L=1 for movement.
-
-Ablative Crystal: 15. N=12, L=3 for movement, purification, and drop.
-
-Proof of Completeness: 12. N=12, L=0. No dispersal latency because quintessence is never grabbed. No drop latency because the outputs are never grabbed.
-
-Wheel Representation: 12. N=11, L=1 for dispersal (salt wand).
-
-Synthesis via Alcohol: 8. N=6, L=2 for movement and unification.
-
-Universal Compound: 96. N=96 for salt, L=0 (lead wand).
-
-General Anaesthetic: 19. N=18 for salt, L=1 for drop.
-
-Wakefulness Potion: 16. N=16, L=0 (wand).
-
-Suture Thread: 24. N=24 for salt, L=0.
-
-Blood-Stanching Powder: 37. N=36, L=1 for drop.
-
-Tonic of Hydration: 28. N=27, L=1 for drop.
-
-Van Berlo’s Pivots: 8. N=11, D=3 (partially output+output, partially disposal+output), L=0 (wand).
-
-Reactive Gold: N=24, L=2 for two purification steps. Non-overlap optimization uses N=26 to avoid purification latency, but this isn't required here.
-
-Assassin’s Filament: 30. N=30 for iron, L=0.
-
-Vaporous Solvent: 36. N=36 for stabilized air, L=0 (lead wand).
-
-Alchemical Slag: 14. N=12, L=2 for two purification steps. Using extra inputs to avoid purification latency isn't useful.
-
-Visillary Anaesthetic: ?. N=12, D=? (output+output and/or animismus+output), L=1 for drop.
-
-Electrum Separation: 11. Output-limited level. Maximum of 1 output per cycle from 1 to 3, and 2 per cycle afterwards.
-
-Hyper-Volatile Gas: 8. N=6, L=2 for movement and drop. (This isn't a tight bound; multiple movement steps are most likely required).
-
-Quintessential Medium: 10. N=10, L=0. The first two inputs go to a dispersal+unification pipeline, used to make 4 stabilized quintessences (not full outputs). A debonding+bonding pipeline outputs on 4 and 6; then the stabilized quintessences are reinjected, outputting on 7, 8, 9, 10.
+| Face Powder | 13 | N=12, L=1 for drop |
+| Waterproof Sealant | 12 | N=12, L=0 (water wand) |
+| Hangover Cure | 19 | N=18, L=1 for drop |
+| Airship Fuel | 9 | N=8, L=1 for drop |
+| Precision Machine Oil | 12 | N=12 for lead, L=0 (water wand) | Quicksilver has N=12, L=1, but it can be double-consumed, making it non-limiting |
+| Health Tonic | 8 | N=12 for vitae, D=5 (output+same output), L=1 for movement (required to set up the double-consume) |
+| Stamina Potion | 12 | N=12 for bistabilized water, L=0 (wand) |
+| Hair Product | 25 | N=24, L=1 for drop |
+| Rocket Propellant | 16 | N=15, L=1 for drop |
+| Mist of Incapacitation | 8 | N=12 for air and quicksilver, D=5 (output+output for air, projection+output for quicksilver), L=1 for movement |
+| Explosive Phial | 10 | N=9, L=1 for drop |
+| Armor Filament | 13 | N=24 for quicksilver, D=11 (projection+projection), L=0 | D=12 is not possible, since that would inevitably make a copper on cycle 2 |
+| Courage Potion | 13 | N=12, L=1 for drop |
+| Surrender Flare | 3 | N=6, D=3 (trivial), L=0 |
+| Alcohol Separation | 3 | N=6, D=3 (trivial), L=0 |
+| Water Purifier |22 | N=21, L=1 for drop |
+| Seal Solvent | 24 | N=24 for air, L=0 (lead wand) |
+| Climbing Rope Fiber | 36 | N=36, L=0 |
+| Warming Tonic | 13 | N=12, L=1 |
+| Life Sensing Potion | 12 | N=12, D=1 (animismus+output), L=1 |
+| Very Dark Thread | 13 | N=24 for quicksilver, D=11, L=0 |
+| Litharge Separation | 11 | This is an output-limited level, so it doesn't follow the `N-D+L` formula | You can output at most twice on cycle 1 and 2, 3x on cycle 3, and 4x on later cycles, giving a minimum of 11 cycles for the 36 required outputs |
+| Stain Remover | 24 | N=24 for air and water, L=0 (lead wand) |
+| Sword Alloy | 49 | N=48, L=1 for purification |
+| Invisible Ink | 23 | N=24, D=2 (animismus+output), L=1 for drop |
+| Purified Gold | 52 | N=48, L=4 for 5 purification steps, -1 because input is never grabbed | No drop latency because output is never grabbed |
+| Alchemical Jewel | 36 | N=36 for earth, L=0 (gold wand) |
+| Golden Thread | 24 | N=24 for salt, L=0 |
+| Mist of Hallucination | 24 | N=24 for air, L=0 (lead wand) |
+| Timing Crystal | 108 | N=108 for salt, L=0 (gold wand) |
+| Voltaic Coil | 24 | N=24 for lead, L=0 |
+| Unstable Compound | 31 | N=30, L=1 for drop |
+| Curious Lipstick | 49 | N=54, D=5 (animismus+output), L=0 (vitae wand) |
+| Universal Solvent | 17 | N=18, D=1 (animismus+output), L=0 (lead wand) |
+
+### Journal
+| Level  | Theoretical Minimum | Notes |
+| --- | --- | --- |
+| Van Berlo's Wheel | 22 | N=21, L=1 for drop |
+| Van Berlo's Chain | 24 | N=24, L=0 |
+| Reactive Cinnabar | 24 | N=24 for salt, L=0 (quicksilver wand) |
+| Silver Caustic | 24 | N=36 for quicksilver, D=12 (projection+projection), L=0 (wand) |
+| Lambent II/IX | 45 | N=48 for fire, D=3 (output+output), L=0 (gold wand) |
+| Explorer's Salve | 14 | N=18 for vitae, D=5 (output+same output), L=1 for movement (required to setup the double-consume) |
+| Preservative Salt | 9 | N=9 for salt, L=0 (wand) |
+| Sailcloth Thread | 11 | N=11 for salt, L=0 (wand) |
+| Spyglass Crystal | 39 | N=39 for salt, L=0 (lead wand) |
+| Buoyant Cable | 30 | N=30, L=0 |
+| Ravari's Wheel | 30 | N=48 for quicksilver, D=18 (projection+projection), L=0 (lead wand) |
+| Lubricating Filament | 30 | N=30, L=0 |
+| Resonant Crystal | 39 | N=38, L=1 for drop |
+| Refined Bronze | 13 | N=12 for tinstone, L=1 for movement |
+| Ablative Crystal | 15 | N=12, L=3 for movement, purification, and drop |
+| Proof of Completeness | 12 | N=12, L=0 | No dispersal latency because quintessence is never grabbed | No drop latency because the outputs are never grabbed |
+| Wheel Representation | 12 | N=11, L=1 for dispersal (salt wand) |
+| Synthesis via Alcohol | 8 | N=6, L=2 for movement and unification |
+| Universal Compound | 96 | N=96 for salt, L=0 (lead wand) |
+| General Anaesthetic | 19 | N=18 for salt, L=1 for drop |
+| Wakefulness Potion | 16 | N=16, L=0 (wand) |
+| Suture Thread | 24 | N=24 for salt, L=0 |
+| Blood-Stanching Powder | 37 | N=36, L=1 for drop |
+| Tonic of Hydration | 28 | N=27, L=1 for drop |
+| Van Berlo’s Pivots | 8 | N=11, D=3 (partially output+output, partially disposal+output), L=0 (wand) |
+| Reactive Gold | 26 | N=24, L=2 for two purification steps | Non-overlap optimization uses N=26 to avoid purification latency, but this isn't required here |
+| Assassin’s Filament | 30 | N=30 for iron, L=0 |
+| Vaporous Solvent | 36 | N=36 for stabilized air, L=0 (lead wand) |
+| Alchemical Slag | 14 | N=12, L=2 for two purification steps | Using extra inputs to avoid purification latency isn't useful |
+| Visillary Anaesthetic | 11 | N=12, D=2 (animismus+output), L=1 for drop | Animismus+output requires overlapping a calcification on the earth input | To keep access to earth, put a duplication below that calcification |
+| Electrum Separation | 11 | Output-limited level | Maximum of 1 output per cycle from 1 to 3, and 2 per cycle afterwards |
+| Hyper-Volatile Gas | 8 | N=6, L=2 for movement and drop | (This isn't a tight bound; multiple movement steps are most likely required) |
+| Quintessential Medium | 10 | N=10, L=0 | The first two inputs go to a dispersal+unification pipeline, used to make 4 stabilized quintessences (not full outputs) | A debonding+bonding pipeline outputs on 4 and 6; then the stabilized quintessences are reinjected, outputting on 7, 8, 9, 10 |
