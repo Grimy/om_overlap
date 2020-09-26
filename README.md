@@ -153,4 +153,5 @@ Unless otherwise specified, D=0.
 | Visillary Anaesthetic | 11 | N=12, D=2 (animismus+output), L=1 for drop. Animismus+output requires overlapping a calcification on the earth input. To keep access to earth, put a duplication below that calcification |
 | Electrum Separation | 11 | Output-limited level. Maximum of 1 output per cycle from 1 to 3, and 2 per cycle afterwards |
 | Hyper-Volatile Gas | 8 | N=6, L=2 for movement and drop (this isn't a tight bound; multiple movement steps are most likely required) |
+| Embalming Fluid | 25 | N=24, L=1 for animismus. Alternatively, N=25, L=0 by prebuilding mors. Use vitae wands |
 | Quintessential Medium | 10 | N=10, L=0. The first two inputs go to a dispersal+unification pipeline, used to make 4 stabilized quintessences (not full outputs). A debonding+bonding pipeline outputs on 4 and 6; then the stabilized quintessences are reinjected, outputting on 7, 8, 9, 10 |
