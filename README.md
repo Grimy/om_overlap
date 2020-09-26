@@ -104,11 +104,11 @@ Unless otherwise specified, D=0. Infinites never have drop latency.
 | Warming Tonic | 13 | N=12, L=1 |
 | Life Sensing Potion | 12 | N=12, D=1 (animismus+output), L=1 |
 | Very Dark Thread | 13 | N=24 for quicksilver, D=11, L=0 |
-| Litharge Separation | 11 | This is an output-limited level, so it doesn't follow the `N-D+L` formula | You can output at most twice on cycle 1 and 2, 3x on cycle 3, and 4x on later cycles, giving a minimum of 11 cycles for the 36 required outputs |
+| Litharge Separation | 11 | This is an output-limited level, so it doesn't follow the `N-D+L` formula. You can output at most twice on cycle 1 and 2, 3x on cycle 3, and 4x on later cycles, giving a minimum of 11 cycles for the 36 required outputs |
 | Stain Remover | 24 | N=24 for air and water, L=0 (lead wand) |
 | Sword Alloy | 49 | N=48, L=1 for purification |
 | Invisible Ink | 23 | N=24, D=2 (animismus+output), L=1 for drop |
-| Purified Gold | 52 | N=48, L=4 for 5 purification steps, -1 because input is never grabbed | No drop latency because output is never grabbed |
+| Purified Gold | 52 | N=48, L=4 for 5 purification steps, -1 because input is never grabbed. No drop latency because output is never grabbed |
 | Alchemical Jewel | 36 | N=36 for earth, L=0 (gold wand) |
 | Golden Thread | 24 | N=24 for salt, L=0 |
 | Mist of Hallucination | 24 | N=24 for air, L=0 (lead wand) |
@@ -136,7 +136,7 @@ Unless otherwise specified, D=0. Infinites never have drop latency.
 | Resonant Crystal | 39 | N=38, L=1 for drop |
 | Refined Bronze | 13 | N=12 for tinstone, L=1 for movement |
 | Ablative Crystal | 15 | N=12, L=3 for movement, purification, and drop |
-| Proof of Completeness | 12 | N=12, L=0 | No dispersal latency because quintessence is never grabbed | No drop latency because the outputs are never grabbed |
+| Proof of Completeness | 12 | N=12, L=0 | No dispersal latency because quintessence is never grabbed. No drop latency because the outputs are never grabbed |
 | Wheel Representation | 12 | N=11, L=1 for dispersal (salt wand) |
 | Synthesis via Alcohol | 8 | N=6, L=2 for movement and unification |
 | Universal Compound | 96 | N=96 for salt, L=0 (lead wand) |
@@ -146,11 +146,11 @@ Unless otherwise specified, D=0. Infinites never have drop latency.
 | Blood-Stanching Powder | 37 | N=36, L=1 for drop |
 | Tonic of Hydration | 28 | N=27, L=1 for drop |
 | Van Berlo’s Pivots | 8 | N=11, D=3 (partially output+output, partially disposal+output), L=0 (wand) |
-| Reactive Gold | 26 | N=24, L=2 for two purification steps | Non-overlap optimization uses N=26 to avoid purification latency, but this isn't required here |
+| Reactive Gold | 26 | N=24, L=2 for two purification steps. Non-overlap optimization uses N=26 to avoid purification latency, but this isn't required here |
 | Assassin’s Filament | 30 | N=30 for iron, L=0 |
 | Vaporous Solvent | 36 | N=36 for stabilized air, L=0 (lead wand) |
 | Alchemical Slag | 14 | N=12, L=2 for two purification steps | Using extra inputs to avoid purification latency isn't useful |
-| Visillary Anaesthetic | 11 | N=12, D=2 (animismus+output), L=1 for drop | Animismus+output requires overlapping a calcification on the earth input | To keep access to earth, put a duplication below that calcification |
-| Electrum Separation | 11 | Output-limited level | Maximum of 1 output per cycle from 1 to 3, and 2 per cycle afterwards |
-| Hyper-Volatile Gas | 8 | N=6, L=2 for movement and drop | (This isn't a tight bound; multiple movement steps are most likely required) |
-| Quintessential Medium | 10 | N=10, L=0 | The first two inputs go to a dispersal+unification pipeline, used to make 4 stabilized quintessences (not full outputs) | A debonding+bonding pipeline outputs on 4 and 6; then the stabilized quintessences are reinjected, outputting on 7, 8, 9, 10 |
+| Visillary Anaesthetic | 11 | N=12, D=2 (animismus+output), L=1 for drop. Animismus+output requires overlapping a calcification on the earth input | To keep access to earth, put a duplication below that calcification |
+| Electrum Separation | 11 | Output-limited level. Maximum of 1 output per cycle from 1 to 3, and 2 per cycle afterwards |
+| Hyper-Volatile Gas | 8 | N=6, L=2 for movement and drop (this isn't a tight bound; multiple movement steps are most likely required) |
+| Quintessential Medium | 10 | N=10, L=0. The first two inputs go to a dispersal+unification pipeline, used to make 4 stabilized quintessences (not full outputs). A debonding+bonding pipeline outputs on 4 and 6; then the stabilized quintessences are reinjected, outputting on 7, 8, 9, 10 |
