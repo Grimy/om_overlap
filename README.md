@@ -58,8 +58,8 @@ As seen above, inputs can spawn twice per cycle. However, this requires the inpu
 
 * Trivial double-consume: in levels like Stabilized Water, where an output can be made from a set of inputs without any movement nor conversion glyphs, the output will naturally trigger twice per cycle.
 * Projection + projection: projection triggers twice per cycle, making it one of the easiest ways to double-consume. This is of course only applicable to quicksilver. 
-* Conversion + output: conversion glyphs only consume in the first half-cycle, so unlike projection, they can't double-consume on their own. They can however be combined with an output consuming in the second half-cycle.
-* Output + another output: when an input is used in multiple outputs
+* Anything + output: conversion glyphs only consume in the first half-cycle, so unlike projection, they can't double-consume on their own. They can however be combined with an output consuming in the second half-cycle.
+* Output + another output: this is only applicable to levels with multiple outputs sharing a common atom.
 * Output + same output: this is requires using a non-limiting multi-atom input as a wand, making it rarely applicable.
 * Anything + disposal : this is rarely useful, but a multi-atom input can only be double-consumed if *all* its atoms are double-consumed, so using disposal to handle stray atoms can actually speed things up.
 
@@ -81,17 +81,17 @@ Refined Gold: 15. N=30 for quicksilver, D=15 (projection+projection), L=0.
 
 Face Powder: 13. N=12, L=1 for drop.
 
-Waterproof Sealant: 12. N=12, L=0 (spare water wand).
+Waterproof Sealant: 12. N=12, L=0 (water wand).
 
 Hangover Cure: 19. N=18, L=1 for drop.
 
 Airship Fuel: 9. N=8, L=1 for drop.
 
-Precision Machine Oil: 12. N=12 for lead, L=0. Quicksilver has N=12, L=1, but it can be double-consumed, making it non-limiting.
+Precision Machine Oil: 12. N=12 for lead, L=0 (water wand). Quicksilver has N=12, L=1, but it can be double-consumed, making it non-limiting.
 
 Health Tonic: 8. N=12 for vitae, D=5 (output+same output), L=1 for movement (required to set up the double-consume).
 
-Stamina Potion: 12. N=12 for bistabilized water, L=0.
+Stamina Potion: 12. N=12 for bistabilized water, L=0 (wand).
 
 Hair Product: 25. N=24, L=1 for drop.
 
@@ -111,7 +111,7 @@ Alcohol Separation: 3. N=6, D=3 (trivial), L=0.
 
 Water Purifier: 22. N=21, L=1 for drop.
 
-Seal Solvent: 24. N=24 for air, L=0 (spare lead wand).
+Seal Solvent: 24. N=24 for air, L=0 (lead wand).
 
 Climbing Rope Fiber: 36. N=36, L=0.
 
@@ -122,3 +122,45 @@ Life Sensing Potion: 12. N=12, D=1 (animismus+output), L=1.
 Very Dark Thread: 13. N=24 for quicksilver, D=11, L=0.
 
 Litharge Separation: 11. This is an output-limited level, so it doesn't follow the normal theory.
+
+Stain Remover: 24. N=24 for air and water, L=0 (lead wand).
+
+Sword Alloy: 49. N=48, L=1 for purification.
+
+Invisible Ink: 23. N=24, D=2 (animismus+output), L=1 for drop.
+
+Purified Gold: 52. N=48, L=4 for 5 purification steps, -1 because input is never grabbed. No drop latency because output is never grabbed.
+
+Alchemical Jewel: 36. N=36 for earth, L=0 (gold wand).
+
+Golden Thread: 24. N=24 for salt, L=0.
+
+Mist of Hallucination: 24. N=24 for air, L=0 (lead wand).
+
+Timing Crystal: 108. N=108 for salt, L=0 (gold wand).
+
+Voltaic Coil: 24. N=24 for lead, L=0.
+
+Unstable Compound: 31. N=30, L=1 for drop.
+
+Curious Lipstick: 49. N=54, D=5 (animismus+output), L=0 (vitae wand).
+
+Universal Solvent: 17. N=18, D=1 (animismus+output), L=0 (lead wand).
+
+Van Berlo's Wheel: 22. N=21, L=1 for drop.
+
+Van Berlo's Chain: 24. N=24, L=0.
+
+Reactive Cinnabar: 24. N=24 for salt, L=0 (quicksilver wand).
+
+Silver Caustic: 24. N=36 for quicksilver, D=12 (projection+projection), L=0 (wand).
+
+Lambent II/IX: 45. N=48 for fire, D=3 (output+output), L=0 (gold wand).
+
+Explorer's Salve: 14. N=18 for vitae, D=5 (output+same output), L=1 for movement (required to setup the double-consume).
+
+Preservative Salt: 9. N=9 for salt, L=0 (wand).
+
+Sailcloth Thread: 11. N=11 for salt, L=0 (wand).
+
+Refined Bronze: 13. N=12 for tinstone, L=1 for movement.
