@@ -75,9 +75,11 @@ As seen above, inputs can spawn twice per cycle. However, this requires the inpu
 
 ## Theoretical minimums
 
-Stabilized Water: 3. N=6, D=3 (trivial), L=0.
+Unless otherwise specified, D=0. Infinites never have drop latency.
 
-Refined Gold: 15. N=30 for quicksilver, D=15 (projection+projection), L=0.
+Stabilized Water: 3. N=6, D=3 (trivial), L=0 (output is never grabbed).
+
+Refined Gold: 15. N=30 for quicksilver, D=15 (projection+projection), L=0 (output is never grabbed).
 
 Face Powder: 13. N=12, L=1 for drop.
 
@@ -121,7 +123,7 @@ Life Sensing Potion: 12. N=12, D=1 (animismus+output), L=1.
 
 Very Dark Thread: 13. N=24 for quicksilver, D=11, L=0.
 
-Litharge Separation: 11. This is an output-limited level, so it doesn't follow the normal theory.
+Litharge Separation: 11. It's not possible to get 4 outputs per cycle starting on cycle 4. 
 
 Stain Remover: 24. N=24 for air and water, L=0 (lead wand).
 
@@ -195,7 +197,7 @@ Blood-Stanching Powder: 37. N=36, L=1 for drop.
 
 Tonic of Hydration: 28. N=27, L=1 for drop.
 
-Van Berlo’s Pivots: 9?. N=11, D=2? (partially output+output, partially disposal+output), L=0
+Van Berlo’s Pivots: 8. N=11, D=3 (partially output+output, partially disposal+output), L=0 (wand).
 
 Reactive Gold: N=24, L=2 for two purification steps. Non-overlap optimization uses N=26 to avoid purification latency, but this isn't required here.
 
@@ -207,4 +209,8 @@ Alchemical Slag: 14. N=12, L=2 for two purification steps. Using extra inputs to
 
 Visillary Anaesthetic: ?. N=12, D=? (output+output and/or animismus+output), L=1 for drop.
 
-Electrum Separation: ?. Output-limited level.
+Electrum Separation: 11. Output-limited level. The output can proc twice per turn starting from cycle 4.
+
+Hyper-Volatile Gas: 8. N=6, L=2 for movement and drop. (This isn't a tight bound; multiple movement steps are most likely required).
+
+Quintessential Medium: 10. N=10, L=0. The first two inputs go to a dispersal+unification pipeline, used to make 4 stabilized quintessences (not full outputs). A debonding+bonding pipeline outputs on 4 and 6; then the stabilized quintessences are reinjected, outputting on 7, 8, 9, 10.
