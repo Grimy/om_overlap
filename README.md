@@ -2,7 +2,7 @@
 
 This guide assumes you're already familiar with [regular cycles theory](https://www.reddit.com/r/opus_magnum/comments/7qmkv6/list_of_current_cycle_optimal_scores/).
 
-Overlap makes it possible to use inputs every cycle, and sometimes twice per cycle, so instead of the usual `2N+1+L`, minimum cycles for a puzzle is given by `N-D+L`, where:
+Overlap makes it possible to use inputs every cycle, and sometimes even twice per cycle, so instead of the usual `2N+1+L`, minimum cycles for a puzzle is given by `N-D+L`, where:
 
 * N is the number of sets of inputs needed to make all required outputs
 * D is the number of times you can double-consume limiting inputs
@@ -77,9 +77,10 @@ As seen above, inputs can spawn twice per cycle. However, this requires the inpu
 
 Unless otherwise specified, D=0. Infinites never have drop latency.
 
-Stabilized Water: 3. N=6, D=3 (trivial), L=0 (output is never grabbed).
-
-Refined Gold: 15. N=30 for quicksilver, D=15 (projection+projection), L=0 (output is never grabbed).
+| Level  | Theoretical Minimum | Notes |
+| --- | --- | --- |
+| Stabilized Water | 3 | N=6, D=3 (trivial), L=0 (output is never grabbed) |
+| Refined Gold | 15 | N=30 for quicksilver, D=15 (projection+projection), L=0 (output is never grabbed) |
 
 Face Powder: 13. N=12, L=1 for drop.
 
@@ -123,7 +124,7 @@ Life Sensing Potion: 12. N=12, D=1 (animismus+output), L=1.
 
 Very Dark Thread: 13. N=24 for quicksilver, D=11, L=0.
 
-Litharge Separation: 11. It's not possible to get 4 outputs per cycle starting on cycle 4. 
+Litharge Separation: 11. This is an output-limited level, so it doesn't follow the `N-D+L` formula. You can output at most twice on cycle 1 and 2, 3x on cycle 3, and 4x on later cycles, giving a minimum of 11 cycles for the 36 required outputs.
 
 Stain Remover: 24. N=24 for air and water, L=0 (lead wand).
 
@@ -209,7 +210,7 @@ Alchemical Slag: 14. N=12, L=2 for two purification steps. Using extra inputs to
 
 Visillary Anaesthetic: ?. N=12, D=? (output+output and/or animismus+output), L=1 for drop.
 
-Electrum Separation: 11. Output-limited level. The output can proc twice per turn starting from cycle 4.
+Electrum Separation: 11. Output-limited level. Maximum of 1 output per cycle from 1 to 3, and 2 per cycle afterwards.
 
 Hyper-Volatile Gas: 8. N=6, L=2 for movement and drop. (This isn't a tight bound; multiple movement steps are most likely required).
 
