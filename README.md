@@ -131,7 +131,7 @@ Unless otherwise specified, D=0.
 | Sailcloth Thread | 11 | N=11 for salt, L=0 |
 | Spyglass Crystal | 39 | N=39 for salt, L=0 (lead wand) |
 | Buoyant Cable | 30 | N=30, L=0 |
-| Ravari's Wheel | 30 | N=48 for quicksilver, D=18 (projection+projection), L=0 (lead wand) |
+| Ravari's Wheel | 36 | N=36 for lead, L=0 (quicksilver wand). quicksilver had N=48, D=18, making it non-limiting |
 | Lubricating Filament | 30 | N=30, L=0 |
 | Resonant Crystal | 39 | N=38, L=1 for drop |
 | Refined Bronze | 13 | N=12 for tinstone, L=1 for movement (required since the tins in the input aren't adjacent) |
