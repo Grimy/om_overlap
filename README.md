@@ -61,7 +61,8 @@ As seen above, inputs can spawn twice per cycle. However, this requires the inpu
 * Anything + output: conversion glyphs only consume in the first half-cycle, so unlike projection, they can't double-consume on their own. They can however be combined with an output consuming in the second half-cycle.
 * Output + another output: this is only applicable to levels with multiple outputs sharing a common atom.
 * Output + same output: this is requires using a non-limiting multi-atom input as a wand, making it rarely applicable.
-* Anything + disposal : this is rarely useful, but a multi-atom input can only be double-consumed if *all* its atoms are double-consumed, so using disposal to handle stray atoms can actually speed things up.
+
+Note that a multi-atom input can only be double-consumed if *all* its atoms are double-consumed on the same cycle.
 
 ## Latency
 
@@ -145,7 +146,7 @@ Unless otherwise specified, D=0.
 | Suture Thread | 24 | N=24 for salt, L=0 |
 | Blood-Stanching Powder | 37 | N=36, L=1 for drop |
 | Tonic of Hydration | 28 | N=27, L=1 for drop |
-| Van Berlo’s Pivots | 8 | N=11, D=3 (partially output+output, partially disposal+output), L=0 (wand) |
+| Van Berlo’s Pivots | 11 | N=11, L=0 (wand) |
 | Reactive Gold | 26 | N=24, L=2 for two purification steps. Non-overlap optimization uses N=26 to avoid purification latency, but this isn't required here |
 | Assassin’s Filament | 30 | N=30 for iron, L=0 |
 | Vaporous Solvent | 36 | N=36 for stabilized air, L=0 (lead wand) |
