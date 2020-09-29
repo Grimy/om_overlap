@@ -125,8 +125,8 @@ Unless otherwise specified, D=0.
 | Van Berlo's Wheel | 22 | N=21, L=1 for drop |
 | Van Berlo's Chain | 24 | N=24, L=0 |
 | Reactive Cinnabar | 24 | N=24 for salt, L=0 (quicksilver wand) |
-| Silver Caustic | 24 | N=36 for quicksilver, D=12 (projection+projection), L=0 (wand) |
-| Lambent II/IX | 45 | N=48 for fire, D=3 (output+output), L=0 (gold wand) |
+| Silver Caustic | 22 | N=36 for quicksilver, D=14 (10x projection+projection, 4x projection+output), L=0 (wand) |
+| Lambent II/IX | 48 | N=48 for fire, L=0 (gold wand) |
 | Explorer's Salve | 14 | N=18 for vitae, D=5 (output+same output), L=1 for movement (required to setup the double-consume) |
 | Preservative Salt | 9 | N=9 for salt, L=0 (wand) |
 | Sailcloth Thread | 11 | N=11 for salt, L=0 |
