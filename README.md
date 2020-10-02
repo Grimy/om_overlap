@@ -154,7 +154,7 @@ Unless otherwise specified, D=0.
 | Explosive Victrite | 43 | N=42, L=1 for drop |
 | Celestial Thread | 36 | N=36 for air, L=0 |
 | Visillary Anaesthetic | 13 | N=12, L=1 for drop. Double-consuming isn't possible: both animismus+output and output+output would require overlapping a calcification on an elemental input, permanently losing access to that element |
-| Animismus Buffer | 20 | N=20, L=1 for drop |
+| Animismus Buffer | 20 | N=20, L=1 for drop. Animismus+output double-consume doesn’t work because animismus requires unbonding but output requires bonding.  |
 | Electrum Separation | 11 | Output-limited level. Maximum of 1 output per cycle from 1 to 3, and 2 per cycle afterwards |
 | Hyper-Volatile Gas | 8 | N=6, L=2 for movement and drop (this isn't a tight bound; multiple movement steps are most likely required) |
 | Embalming Fluid | 25 | N=24, L=1 for animismus. Alternatively, N=25, L=0 by prebuilding mors. Use vitae wands |
