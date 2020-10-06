@@ -18,39 +18,32 @@ Knowing the order in which everything happens each cycle is necessary for overla
 
 1) Grabs and drops.
 
-2) Unblocked inputs are flagged.
-Note: arm bases and hitbox of conversion glyph output will not block input.  These will cause a collision on the next round of collision detection.
+2) Unblocked inputs spawn.
 
-3) Inputs flagged in 2 spawn (this allows overlapping inputs to both spawn).
+Note: Arm bases and hitboxes of conversion glyph products do not block input. Inputs spawning at the same time do not block each other. These will all cause a collision on the next round of collision detection, unless something consumes the overlapping atom before then.
 
-4) Atoms that are not bonded to anything are flagged.
+3) Conversion glyphs, disposal, and projection consume; bonding, debonding, calcification, and duplication trigger. This all happens in order from bottom to top (in-game, moving a glyph puts it on top; using an external solution file editor, the last glyph listed is on top).
 
-5) Conversion glyphs, disposal, and projection consume; bonding, debonding, calcification, and duplication trigger. This all happens in order from bottom to top (in-game, moving a glyph puts it on top; using an external solution file editor, the last glyph listed is on top).
+In this step, only atoms that were continuously unbonded since the start of the step can be consumed. This creates a delay between e.g. debonding and projection.
 
-In this phase, only atoms that were flagged during 4 can be consumed. This creates a delay between debonding and projection.
+4) Outputs consume.
 
-6) Outputs consume.
-
-7) Window of collision detection: arms move, hitboxes for conversion glyph outputs grow from a point.
+5) Window of collision detection: arms move, hitboxes for conversion glyph outputs grow from a point.
 Note: fast-forward can delay collision detection by up to half a cycle.
 
-8) Unblocked inputs are flagged.
+6) Unblocked inputs spawn.
 
-9) Inputs flagged in 8 spawn.
+7) Conversion glyphs produce; disposal and projection consume; bonding, debonding, calcification, and duplication trigger. This all happens in order from bottom to top.
 
-10) Atoms that are not bonded to anything are flagged.
-
-11) Conversion glyphs produce; disposal and projection consume; bonding, debonding, calcification, and duplication trigger. This all happens in order from bottom to top.
-
-In this phase, only atoms flagged in 10 can be consumed.
+In this step, only atoms that were continuously unbonded since the start of the step can be consumed.
 
 Note: atoms produced by conversion glyphs can't interact with glyphs below that conversion glyph, even though their hitbox formed earlier.
 
-12) Outputs consume.
+8) Outputs consume.
 
-13) Increment cycle count, check for completion.
+9) Increment cycle count, check for completion.
 
-I sometimes refer to half-cycles: steps 1-6 are "the first half-cycle", steps 7-13 are "the second half-cycle".
+I sometimes refer to half-cycles: steps 1-4 are "the first half-cycle", steps 5-9 are "the second half-cycle".
 
 ## Double consuming
 
@@ -108,7 +101,7 @@ Unless otherwise specified, D=0.
 | Litharge Separation | 11 | This is an output-limited level, so it doesn't follow the `N-D+L` formula. It's possible to output at most twice on cycle 1 and 2, 3x on cycle 3, and 4x on later cycles, giving a minimum of 11 cycles for the 36 required outputs |
 | Stain Remover | 24 | N=24 for air and water, L=0 (lead wand) |
 | Sword Alloy | 49 | N=48, L=1 for purification |
-| Invisible Ink | 23 | N=24, D=2 (animismus+output), L=1 for drop |
+| Invisible Ink | 24 | N=24 for water, L=0 (salt wand). The spare salt for the wand comes from animismus+output double-consuming. |
 | Purified Gold | 52 | N=48, L=4 for 5 purification steps (inputs are never grabbed, output is never grabbed) |
 | Alchemical Jewel | 36 | N=36 for earth, L=0 (gold wand) |
 | Golden Thread | 24 | N=24 for salt, L=0 |
