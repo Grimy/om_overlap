@@ -53,7 +53,7 @@ As seen above, inputs can spawn twice per cycle. However, this requires the inpu
 * Projection + projection: projection triggers twice per cycle, making it very easy to double-consume with it. This is only applicable to single-atom quicksilver inputs.
 * Consuming glyph + output: conversion glyphs only consume in the first half-cycle, so unlike projection, they can't double-consume on their own. They can however be combined with an output consuming in the second half-cycle.
 * Output + another output: this requires multiple outputs sharing a common atom. Additionally, it must be possible to complete the outputs on different half-cycles, otherwise they’d just bond together.
-* Output + same output: this requires using a non-limiting multi-atom input as a wand (or, alternatively, using duplication and triplex setup to do conditional bonding). Literally only applicable to Health Tonic.
+* Output + same output: this requires using a non-limiting multi-atom input as a wand (or, alternatively, using duplication and triplex to do conditional bonding). Literally only applicable to Health Tonic.
 
 Note that a multi-atom input can only be double-consumed if *all* its atoms are double-consumed on the same cycle.
 
