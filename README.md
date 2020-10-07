@@ -50,10 +50,10 @@ I sometimes refer to half-cycles: steps 1-4 are "the first half-cycle", steps 5-
 As seen above, inputs can spawn twice per cycle. However, this requires the input glyph to be cleared twice per cycle, which is only possible in a limited number of cases:
 
 * Trivial double-consume: in levels like Stabilized Water, where an output can be made from a set of inputs without any movement nor conversion glyphs, the output will naturally trigger twice per cycle.
-* Projection + projection: projection triggers twice per cycle, making it one of the easiest ways to double-consume. This is of course only applicable to quicksilver. 
-* Anything + output: conversion glyphs only consume in the first half-cycle, so unlike projection, they can't double-consume on their own. They can however be combined with an output consuming in the second half-cycle.
-* Output + another output: this is only applicable to levels with multiple outputs sharing a common atom.
-* Output + same output: this is requires using a non-limiting multi-atom input as a wand, making it rarely applicable.
+* Projection + projection: projection triggers twice per cycle, making it very easy to double-consume with it. This is only applicable to single-atom quicksilver inputs.
+* Consuming glyph + output: conversion glyphs only consume in the first half-cycle, so unlike projection, they can't double-consume on their own. They can however be combined with an output consuming in the second half-cycle.
+* Output + another output: this requires multiple outputs sharing a common atom. Additionally, it must be possible to complete the outputs on different half-cycles, otherwise they’d just bond together.
+* Output + same output: this requires using a non-limiting multi-atom input as a wand. Literally only applicable to Health Tonic.
 
 Note that a multi-atom input can only be double-consumed if *all* its atoms are double-consumed on the same cycle.
 
