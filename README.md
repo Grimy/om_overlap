@@ -134,7 +134,7 @@ Unless otherwise specified, D=0.
 | Wheel Representation | 12 | N=11, L=1 for dispersal (salt wand) |
 | Synthesis via Alcohol | 8 | N=6, L=2 for movement (required because the input isn't unification-shaped) and unification |
 | Universal Compound | 91 | N=96 for salt, D=5 (animismus+output), L=0 (lead wand) |
-| General Anaesthetic | 19 | N=18 for salt, L=1 for drop |
+| General Anaesthetic | 14 | N=18 for salt, D=5 (animismus+output), L=1 for drop |
 | Wakefulness Potion | 16 | N=16, L=0 (wand) |
 | Suture Thread | 24 | N=24 for salt, L=0 |
 | Blood-Stanching Powder | 37 | N=36, L=1 for drop |
