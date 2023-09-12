@@ -66,7 +66,7 @@ Requires an output that can be be made from a single set of inputs without any m
 Used in:
 * [Stabilized Water](https://files.mors.technology/Stabilized-Water-20g-3c-2a-0i-1h-1.5w-0.5r-T-O-144877.mp4)
 * [Mist of Incapacitation](https://files.mors.technology/Mist-of-Incapacitation-90g-8c-5a-9i-2h-2.5w-1.5r-O-97886f.mp4)
-* [Surrender Flare](https://cdn.discordapp.com/attachments/1005032287756357672/1150813910077821028/Opus_Magnum_-_Precision_Machine_Oil_1165G_43_291_2023-09-11-23-22-04.gif)
+* [Surrender Flare](https://cdn.discordapp.com/attachments/760122588143157278/1119052258341032006/Opus_Magnum_-_Surrender_Flare_20G_3_7_2023-06-16-01-55-20.gif)
 * [Alcohol Separation](https://i.imgur.com/QvdicOy.mp4)
 
 ### project+project
