@@ -105,16 +105,16 @@ Sometimes hard to set up, making it more useful for rate solves than cycles solv
 
 The currently known ways to do this are:
 * Multi-atom input that stops being suppressed during B.
-** [Health Tonic](https://files.mors.technology/Health-Tonic-60g-8c-16a-8i-4h-4w-T-O-7d3cd9.mp4)
+  * [Health Tonic](https://files.mors.technology/Health-Tonic-60g-8c-16a-8i-4h-4w-T-O-7d3cd9.mp4)
 * Triplex bonding with an atom that becomes fire during B (unused).
 * Output of conversion glyph
-** [Mist of Hallucination](https://files.mors.technology/Mist-of-Hallucination-465g-21c-49a-81i-7h-7.5w-O-a2aa93.mp4)
-** [Stain Remover rate](https://cdn.discordapp.com/attachments/760122588143157278/1150913420602912869/Opus_Magnum_-_Stain_Remover_520G_132_171_2023-09-12-00-00-56.gif)
+  * [Mist of Hallucination](https://files.mors.technology/Mist-of-Hallucination-465g-21c-49a-81i-7h-7.5w-O-a2aa93.mp4)
+  * [Stain Remover rate](https://cdn.discordapp.com/attachments/760122588143157278/1150913420602912869/Opus_Magnum_-_Stain_Remover_520G_132_171_2023-09-12-00-00-56.gif)
 * Quicksilver input that projects silver to gold during A
-** [Seal Solvent rate](https://i.imgur.com/VJ3Fl70.mp4)
+  * [Seal Solvent rate](https://i.imgur.com/VJ3Fl70.mp4)
 * Quicksilver input that projects a metal that is consumed during A
-** [Precision Machine Oil rate](https://cdn.discordapp.com/attachments/1005032287756357672/1150813910077821028/Opus_Magnum_-_Precision_Machine_Oil_1165G_43_291_2023-09-11-23-22-04.gif)
-** [Stamina Potion rate](https://cdn.discordapp.com/attachments/760122588143157278/1150491726797090949/Opus_Magnum_-_Stamina_Potion_935G_71_449_2023-09-10-20-04-22.gif)
+  * [Precision Machine Oil rate](https://cdn.discordapp.com/attachments/1005032287756357672/1150813910077821028/Opus_Magnum_-_Precision_Machine_Oil_1165G_43_291_2023-09-11-23-22-04.gif)
+  * [Stamina Potion rate](https://cdn.discordapp.com/attachments/760122588143157278/1150491726797090949/Opus_Magnum_-_Stamina_Potion_935G_71_449_2023-09-10-20-04-22.gif)
 
 ## Latency
 
