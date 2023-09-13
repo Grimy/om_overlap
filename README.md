@@ -181,7 +181,7 @@ When setting up double-consume is considered unpractical, the theoretical minimu
 | Reactive Cinnabar | 24 | N=24 for salt, L=0 (quicksilver wand) |
 | Silver Caustic | 24 | N=36 for quicksilver, D=12 (project+project), L=0 (wand) |
 | Lambent II/IX | 48 | N=48 for fire, L=0 (gold wand) |
-| Explorer's Salve | 18 | N=18 for vitae, L=0 (wand) |
+| Explorer's Salve | 13 (18) | N=18 for vitae, D=5 (output+wand), L=0 (wand) |
 | Preservative Salt | 9 | N=9 for salt, L=0 (wand). Rate can double-consume the small input (output+wand via suppressed big input) for 1.2r, but this doesn’t help cycles. |
 | Sailcloth Thread | 11 | N=11 for salt, L=0 |
 | Spyglass Crystal | 39 | N=39 for salt, L=0 (lead wand) |
@@ -203,7 +203,7 @@ When setting up double-consume is considered unpractical, the theoretical minimu
 | Van Berlo’s Pivots | 11 | N=11, L=0 (wand) |
 | Reactive Gold | 26 | N=24, L=2 for two purification steps. Double-consuming requires suboptimal purijection, ends up not saving any cycles. |
 | Assassin’s Filament | 30 | N=30 for iron, L=0 |
-| Vaporous Solvent | 36 | N=36 for stabilized air, L=0 (lead wand) |
+| Vaporous Solvent | 31 | N=36 for stabilized air, D=5 (output+wand), L=0 (lead wand) |
 | Alchemical Slag | 14 | N=12, L=2 for two purification steps. Using extra inputs to avoid purification latency isn't useful |
 | Explosive Victrite | 43 | N=42, L=1 for drop |
 | Celestial Thread | 36 | N=36 for air, L=0 |
