@@ -106,7 +106,8 @@ Sometimes hard to set up, making it more useful for rate solves than cycles solv
 The currently known ways to do this are:
 * Multi-atom input that stops being suppressed during B.
   * [Health Tonic](https://files.mors.technology/Health-Tonic-60g-8c-16a-8i-4h-4w-T-O-7d3cd9.mp4)
-* Triplex bonding with an atom that becomes fire during B (unused).
+* Triplex bonding with an atom that becomes fire during B.
+  * [Explosive Phial rate](https://media.discordapp.net/attachments/1005032287756357672/1152246566556553287/Opus_Magnum_-_Explosive_Phial_675G_35_292_2023-09-15-22-15-48.gif)
 * Output of conversion glyph
   * [Mist of Hallucination](https://files.mors.technology/Mist-of-Hallucination-465g-21c-49a-81i-7h-7.5w-O-a2aa93.mp4)
   * [Stain Remover rate](https://cdn.discordapp.com/attachments/760122588143157278/1150913420602912869/Opus_Magnum_-_Stain_Remover_520G_132_171_2023-09-12-00-00-56.gif)
@@ -142,34 +143,34 @@ When setting up double-consume is considered unpractical, the theoretical minimu
 | Waterproof Sealant | 12 | N=12, L=0 (water wand) |
 | Hangover Cure | 19 | N=18, L=1 for drop |
 | Airship Fuel | 9 | N=8, L=1 for drop |
-| Precision Machine Oil | 7 (12) | N=12 for lead and qs, D=5 (output+wand for lead, project+wand for qs), L=0 (water wand) |
-| Health Tonic | 8 | N=12 for vitae, D=5 (output+wand), L=1 for movement (to set up double-consume) |
-| Stamina Potion | 7 (12) | N=12 for bistabilized water, D=5 (output+wand) L=0 (wand) |
+| Precision Machine Oil | 7 (12) | N=12 for lead and qs, D=5 (output+wand via qs for lead, project+wand for qs), L=0 (water wand) |
+| Health Tonic | 8 | N=12 for vitae, D=5 (output+wand via suppressed input), L=1 for movement (to set up double-consume) |
+| Stamina Potion | 7 (12) | N=12 for bistabilized water, D=5 (output+wand via qs) L=0 (wand) |
 | Hair Product | 25 | N=24, L=1 for drop |
 | Rocket Propellant | 16 | N=15, L=1 for drop |
 | Mist of Incapacitation | 8 | N=12 for air and quicksilver, D=5 (output+output for air, output+project for quicksilver), L=1 for movement (to set up double-consume) |
-| Explosive Phial | 10 | N=9, L=1 for drop |
+| Explosive Phial | 8 (10) | N=9, D=2 (output+wand via triplex), L=1 for drop |
 | Armor Filament | 13 | N=24 for quicksilver, D=11 (project+project), L=0. D=12 is not possible, since that would inevitably make a copper on cycle 2 |
 | Courage Potion | 13 | N=12, L=1 for drop |
 | Surrender Flare | 3 | N=6, D=3 (trivial), L=0 (output is never grabbed) |
 | Alcohol Separation | 5 | N=6, D=3 (trivial), L=2 for setting up a catalyst (required due to Berlo geometry) |
 | Water Purifier | 22 | N=21, L=1 for drop |
-| Seal Solvent | 19 | N=24 for air, D=5 (output+wand), L=0 (lead wand) |
+| Seal Solvent | 19 | N=24 for air, D=5 (output+wand via qs), L=0 (lead wand) |
 | Climbing Rope Fiber | 36 | N=36, L=0 |
 | Warming Tonic | 13 | N=12, L=1 for drop |
 | Life-Sensing Potion | 9 (13) | N=12, D=5 (output+animismus), L=2 for movement (to set up double-consume) and drop |
 | Very Dark Thread | 13 | N=24 for quicksilver, D=11, L=0 |
 | Litharge Separation | 11 | This is an output-limited level, so it doesn't follow the `N-D+L` formula. It's possible to output at most twice on cycle 1 and 2, 3x on cycle 3, and 4x on later cycles, giving a minimum of 11 cycles for the 36 required outputs |
-| Stain Remover | 19 (24) | N=24 for air and water, D=5 (output+wand), L=0 (lead wand) |
+| Stain Remover | 19 (24) | N=24 for air and water, D=5 (output+wand via purif output), L=0 (lead wand) |
 | Sword Alloy | 49 | N=48, L=1 for purification |
 | Invisible Ink | 20 (25) | N=24 for water, D=5 (output+animismus), L=1 for drop |
 | Purified Gold | 52 | N=48, L=4 for 5 purification steps (inputs are never grabbed, output is never grabbed) |
 | Alchemical Jewel | 36 | N=36 for earth, L=0 (gold wand) |
 | Golden Thread | 24 | N=24 for salt, L=0 |
-| Mist of Hallucination | 20 | N=24 for air, D=5 (output+wand), L=1 for drop |
+| Mist of Hallucination | 20 | N=24 for air, D=5 (output+wand via purif output), L=1 for drop |
 | Timing Crystal | 108 | N=108 for salt, L=0 (gold wand) |
 | Voltaic Coil | 24 | N=24 for lead, L=0 |
-| Unstable Compound | 31 | N=30, L=1 for drop |
+| Unstable Compound | 29 (31) | N=30, D=2 (output+wand via triplex), L=1 for drop |
 | Curious Lipstick | 49 | N=54, D=5 (output+animismus), L=0 (vitae wand) |
 | Universal Solvent | 13 (18) | N=18, D=5 (output+animismus), L=0 (lead wand) |
 
@@ -181,12 +182,12 @@ When setting up double-consume is considered unpractical, the theoretical minimu
 | Reactive Cinnabar | 24 | N=24 for salt, L=0 (quicksilver wand) |
 | Silver Caustic | 24 | N=36 for quicksilver, D=12 (project+project), L=0 (wand) |
 | Lambent II/IX | 48 | N=48 for fire, L=0 (gold wand) |
-| Explorer's Salve | 13 (18) | N=18 for vitae, D=5 (output+wand), L=0 (wand) |
-| Preservative Salt | 9 | N=9 for salt, L=0 (wand). Rate can double-consume the small input (output+wand via suppressed big input) for 1.2r, but this doesn’t help cycles. |
+| Explorer's Salve | 13 (18) | N=18 for vitae, D=5 (output+wand via suppressed input), L=0 (wand) |
+| Preservative Salt | 9 | N=9 for salt, L=0 (wand). Rate can double-consume the small input (output+wand via suppressed input) for 1.2r, but this doesn’t help cycles. |
 | Sailcloth Thread | 11 | N=11 for salt, L=0 |
 | Spyglass Crystal | 39 | N=39 for salt, L=0 (lead wand) |
 | Buoyant Cable | 30 | N=30, L=0 |
-| Ravari's Wheel | 31 (36) | N=36 for lead, D=5 (output+wand), L=0 (quicksilver wand). quicksilver has N=48, D=18, making it non-limiting |
+| Ravari's Wheel | 31 (36) | N=36 for lead, D=5 (output+wand via qs), L=0 (quicksilver wand). quicksilver has N=48, D=18, making it non-limiting |
 | Lubricating Filament | 30 | N=30, L=0 |
 | Resonant Crystal | 39 | N=38, L=1 for drop |
 | Refined Bronze | 13 | N=12 for tinstone, L=1 for movement (required since the tins in the input aren't adjacent) |
@@ -196,19 +197,19 @@ When setting up double-consume is considered unpractical, the theoretical minimu
 | Synthesis via Alcohol | 8 | N=6, L=2 for movement (required because the input isn't unification-shaped) and unification |
 | Universal Compound | 92 | N=96 for salt, D=5 (output+animismus or output+unification), L=1 for drop |
 | General Anaesthetic | 14 (19) | N=18 for salt, D=5 (output+animismus), L=1 for drop |
-| Wakefulness Potion | 13 (16) | N=16, D=3 (output+wand), L=0 (wand) |
+| Wakefulness Potion | 13 (16) | N=16, D=3 (output+wand via suppressed input), L=0 (wand) |
 | Suture Thread | 24 | N=24 for salt, L=0 |
 | Blood-Stanching Powder | 37 | N=36, L=1 for drop |
 | Tonic of Hydration | 28 | N=27, L=1 for drop |
 | Van Berlo’s Pivots | 11 | N=11, L=0 (wand) |
 | Reactive Gold | 26 | N=24, L=2 for two purification steps. Double-consuming requires suboptimal purijection, ends up not saving any cycles. |
 | Assassin’s Filament | 30 | N=30 for iron, L=0 |
-| Vaporous Solvent | 31 | N=36 for stabilized air, D=5 (output+wand), L=0 (lead wand) |
+| Vaporous Solvent | 31 | N=36 for stabilized air, D=5 (output+wand via purif output), L=0 (lead wand) |
 | Alchemical Slag | 14 | N=12, L=2 for two purification steps. Using extra inputs to avoid purification latency isn't useful |
 | Explosive Victrite | 43 | N=42, L=1 for drop |
 | Celestial Thread | 36 | N=36 for air, L=0 |
-| Visillary Anaesthetic | 8 (13) | N=12, D=5 (output+wand), L=1 for drop |
-| Animismus Buffer | 16 (21) | N=20, D=5 (output+wand), L=1 for drop |
+| Visillary Anaesthetic | 8 (13) | N=12, D=2 (output+wand), L=1 for drop |
+| Animismus Buffer | 16 (21) | N=20, D=5 (output+wand via animismus output), L=1 for drop |
 | Electrum Separation | 11 | Output-limited level. Maximum of 1 output per cycle from 1 to 3, and 2 per cycle afterwards |
 | Hyper-Volatile Gas | 8 | N=6, L=2 for movement and drop (this isn't a tight bound; multiple movement steps are most likely required) |
 | Embalming Fluid | 25 | N=24, L=1 for animismus. Alternatively, N=25, L=0 by prebuilding mors. Use vitae wands. |
